@@ -1,5 +1,5 @@
-use crate::protocol::Packet;
 use crate::client::RconClient as Base;
+use crate::protocol::Packet;
 use std::net::{Shutdown, TcpStream};
 
 /// TcpSTream implementarion of base RCON protocol
@@ -32,6 +32,10 @@ impl RconClient {
 
     pub fn run(&mut self, command: String) -> Result<Packet, std::io::Error> {
         self.rcon.command(command.as_bytes())
+    }
+
+    pub fn run_raw(&mut self, command: &[u8]) -> Result<Packet, std::io::Error> {
+        self.rcon.command(command)
     }
 
     pub fn reconnect(&mut self) -> Result<(), std::io::Error> {
