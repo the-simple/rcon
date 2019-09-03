@@ -147,7 +147,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "rcon_protocol"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -160,7 +160,7 @@ dependencies = [
  "env_logger 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "pretty_env_logger 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "rcon_protocol 0.1.0",
+ "rcon_protocol 0.1.1",
  "termion 1.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
