@@ -1,0 +1,17 @@
+[package]
+name = "rconcli"
+version = "0.1.0"
+authors = ["Aleksandr Lykhouzov <lykhouzov@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "rcon"
+path = "src/main.rs"
+
+[dependencies]
+clap="2.33"
+log = "0.4"
+pretty_env_logger="0.3"
+env_logger="0.6"
+termion = "1.5"
+rcon_protocol = {path="../rcon_protocol", version="0.1"}

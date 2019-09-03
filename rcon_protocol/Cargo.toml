@@ -1,0 +1,11 @@
+[package]
+name = "rcon_protocol"
+version = "0.1.0"
+authors = ["Aleksandr Lykhouzov <aleksandr.lykhouzov@lecreuset.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["lib","cdylib"]
+
+[dependencies]
+log = "0.4"
